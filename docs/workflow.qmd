@@ -3,9 +3,6 @@ title: "Workflow"
 editor: visual
 author: "Brian W. Rolek"
 date: "17 November 2022"
-project:
-  type: website
-  output-dir: docs
 format:
   html:
     toc: true
@@ -18,20 +15,20 @@ format:
 }
 </style>
 ```
+# 1. Introduction to Integrated State-Space Models
 
-# 1. Introduction
 The materials hereafter provide example for the integrated data model presented within:
 
 C. J. W McClure, B. W. Rolek, J. Fleischer. Composite population trends reveal status of wintering raptors in the Northwestern USA. 2023. Biological Conservation (in review).
 
-These materials are archived online at (INSERT ZOTERO LINK after acceptance). 
+These materials are archived online at (INSERT ZOTERO LINK after acceptance).
 
-Here we provide three examples of integrated data models that combine Winter Raptor Survey Data and Christmas Bird Count data. See .R files for examples of models that only include WRS or CBC data.
+Here we provide three examples of integrated data models that combine Winter Raptor Survey data and Christmas Bird Count data. See .R files for examples of models that only include WRS or CBC data.
 
 # 2. Poisson
 
 ```{r, include=FALSE, cache=FALSE}
-knitr::read_chunk('R//04-analysis-jags-wrscbc-Poisson.R')
+knitr::read_chunk('..//R//04-analysis-jags-wrscbc-Poisson.R')
 ```
 
 ```{r, poisson, eval=FALSE}
@@ -40,7 +37,7 @@ knitr::read_chunk('R//04-analysis-jags-wrscbc-Poisson.R')
 # 3. Negative binomial
 
 ```{r, include=FALSE, cache=FALSE}
-knitr::read_chunk('R//04-analysis-jags-wrscbc-nb.R')
+knitr::read_chunk('..//R//04-analysis-jags-wrscbc-nb.R')
 ```
 
 ```{r, negative binomial, eval=FALSE}
@@ -49,7 +46,7 @@ knitr::read_chunk('R//04-analysis-jags-wrscbc-nb.R')
 # 4. Zero-inflated Poisson
 
 ```{r, include=FALSE, cache=FALSE}
-knitr::read_chunk('R//04-analysis-jags-wrscbc-zip.R')
+knitr::read_chunk('..//R//04-analysis-jags-wrscbc-zip.R')
 ```
 
 ```{r, zero-inflated Poisson, eval=FALSE}
