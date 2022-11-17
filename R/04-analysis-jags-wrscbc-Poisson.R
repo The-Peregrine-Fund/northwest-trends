@@ -1,9 +1,10 @@
+## ---- poisson ----------
 library (jagsUI)
-load("/scratch/brolek/northwest-wrs/data/data.rdata")
-#load("./data/data.rdata")
+#load("/scratch/brolek/northwest-wrs/data/data.rdata")
+load("./data/data.rdata")
 
-sink("/scratch/brolek/northwest-wrs/JAGSmodel.txt")
-#sink("./R/JAGSmodel.txt")
+#sink("/scratch/brolek/northwest-wrs/JAGSmodel.txt")
+sink("./R/JAGSmodel.txt")
 cat ("  
      model {
      ################################
@@ -121,25 +122,23 @@ params <- c("r.mu", "lam.mu","sig.r.mu",  # highest level params
 nc <- 4; na <- 10000; ni <- 500000;  nb <- 400000; nt <- 400  
 #nc <- 4; na <- 10000; ni <- 100000;  nb <- 50000; nt <- 50 
 #nc <- 3; na <- 100; ni <- 200;  nb <- 100; nt <- 1 
-for (i in 3:11){
+
+for (i in 1:11){ # loop through species
   inits <- function(){
     list(
       theta=dall[[i]]$count,
       theta2=dall[[i]]$count2
-      # mn1st=dall[[i]]$mn1st+0.0001,
-      # mn1st2=dall[[i]]$mn1st2+0.0001
     )}
   
-out <- jags(model.file="/scratch/brolek/northwest-wrs/JAGSmodel.txt", 
-            #model.file= "./R/JAGSmodel.txt",          
-            #inits = inits,
+out <- jags(#model.file="/scratch/brolek/northwest-wrs/JAGSmodel.txt", 
+            model.file= "./R/JAGSmodel.txt",          
             dall[[i]], parameters.to.save = params,
                n.chains = nc, n.iter = ni,
                n.burnin=nb, n.thin=nt,
                n.adapt = na, parallel=T,
             codaOnly = c("r", "lmu.N", "lmu.N2"))
 
-save(out, file=paste("/scratch/brolek/northwest-wrs/outputs/",
-                     names(dall)[i],"-wrscbc",
-                     ".rdata", sep="" ))
+# save(out, file=paste("/scratch/brolek/northwest-wrs/outputs/",
+#                      names(dall)[i],"-wrscbc",
+#                      ".rdata", sep="" ))
 }

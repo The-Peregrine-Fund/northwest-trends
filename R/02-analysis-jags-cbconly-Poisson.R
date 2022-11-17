@@ -1,3 +1,5 @@
+## ---- cbcpoisson ----------
+#*************
 library (jagsUI)
 load("/scratch/brolek/northwest-wrs/data/data.rdata")
 # load("./data/data.rdata")
