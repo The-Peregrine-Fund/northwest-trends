@@ -6,6 +6,7 @@ date: "17 November 2022"
 format:
   html:
     toc: true
+    embed-resources: true
 project:
   type: website
   output-dir: ..//docs
