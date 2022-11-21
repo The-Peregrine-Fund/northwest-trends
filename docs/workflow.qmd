@@ -8,7 +8,7 @@ format:
     toc: true
 project:
   type: website
-  output-dir: docs
+  output-dir: ..//docs
 ---
 
 ```{=html}
