@@ -1,14 +1,13 @@
 # northwest-trends
-This repo contains data, .R files, and a Quarto document for 
-
+This repo contains data, .R files, and a HTML website for 
 C. J. W McClure, B. W. Rolek, J. Fleischer. Composite population trends reveal status of wintering raptors in the Northwestern USA. 2023. Biological Conservation (in review).
 
-These materials are archived online at (INSERT ZOTERO LINK after acceptance).
+Materials are archived online at (INSERT ZOTERO LINK after acceptance).
 
-Examples of code for integrated models are available as a Quarto document at:
+Examples of code for integrated models are also available as a HTML website at:
 https://the-peregrine-fund.github.io/northwest-trends/
 
-Metadata: All data are included in the "data" folder as an .Rdata file. Once loaded into R, data are contained in the list "dall" which contains data for 11 raptor species. Here we provide metadata for "dall". Each species has it's own list within "dall". For example, dall[["RTHA"]] will return all Red-tailed Hawk data necessary for the integrated model.
+Metadata: All data are included in the "data" folder as an .Rdata file. Once loaded into R, a list object named "dall" contains data for 11 raptor species. Here we provide metadata for "dall". Each species has it's own list within "dall". For example, dall[["RTHA"]] will return all Red-tailed Hawk data necessary for the integrated model for JAGS.
 
 Each species list has the following fields:
 * count- WRS counts of that species.
