@@ -174,3 +174,20 @@ traceplot(out, paramszi)
 fls[[11]]
 load(fls[[11]])
 traceplot(out, paramsnb)
+
+# Make a table for GOF bayesian p values
+bp.tab <- data.frame("Species"=NA, "Data set"=rep(c("WRS", "CBC"), 11), 
+                     "Poisson"=NA, "negative.binomial"=NA, "zero.inflated.Poisson"=NA)
+j <- 1
+for (i in 1:11){
+bp.tab[j:(j+1), "Species"] <- sp[i]
+load(flnms[[i]][1])
+bp.tab[j:(j+1), "Poisson"] <- bp.func(out)
+load(flnms[[i]][2])
+bp.tab[j:(j+1), "negative.binomial"] <- bp.func(out)
+load(flnms[[i]][3])
+bp.tab[j:(j+1), "zero.inflated.Poisson"] <- bp.func(out)
+j <- j+2
+}
+
+write.csv()

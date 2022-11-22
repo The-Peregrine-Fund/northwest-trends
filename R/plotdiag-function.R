@@ -11,9 +11,9 @@ plot.diag <- function(out, ratio=TRUE, lab=""){
        xlim=c(mn,mx), ylim=c(mn,mx), 
        pch=16, cex=0.5, col="gray10")
   curve(1*x, from=mn, to=mx, add=T, lty=2, lwd=2, col="blue")
-  bp <- round(mean(out$sims.list$dmape.rep.wrs > out$sims.list$dmape.obs.wrs),2)
-  loc <- ifelse(bp < 0.5, "topleft", "bottomright")
-  legend(loc, legend=bquote(p[B]==.(bp)), bty="n", cex=2)
+  bp1 <- round(mean(out$sims.list$dmape.rep.wrs > out$sims.list$dmape.obs.wrs),2)
+  loc <- ifelse(bp1 < 0.5, "topleft", "bottomright")
+  legend(loc, legend=bquote(p[B]==.(bp1)), bty="n", cex=2)
   
   # plot CBC mean absolute percentage error
   mx <- max(c(out$sims.list$dmape.rep.cbc,out$sims.list$dmape.obs.cbc))
@@ -26,9 +26,9 @@ plot.diag <- function(out, ratio=TRUE, lab=""){
        xlim=c(mn,mx), ylim=c(mn,mx), 
        pch=16, cex=0.5, col="gray10")
   curve(1*x, from=mn, to=mx, add=T, lty=2, lwd=2, col="blue")
-  bp <- round(mean(out$sims.list$dmape.rep.cbc > out$sims.list$dmape.obs.cbc),2)
-  loc <- ifelse(bp < 0.5, "topleft", "bottomright")
-  legend(loc, legend=bquote(p[B]==.(bp)), bty="n", cex=2)
+  bp2 <- round(mean(out$sims.list$dmape.rep.cbc > out$sims.list$dmape.obs.cbc),2)
+  loc <- ifelse(bp2 < 0.5, "topleft", "bottomright")
+  legend(loc, legend=bquote(p[B]==.(bp2)), bty="n", cex=2)
   
   if (ratio==TRUE){
     # plot WRS variance/mean ratio
@@ -45,4 +45,11 @@ plot.diag <- function(out, ratio=TRUE, lab=""){
   
   print(paste0("WRS ratio of observation and process error=", round(out$mean$sig.ratio[1],1) ))
   print(paste0("CBC ratio of observation and process error=", round(out$mean$sig.ratio[2],1) ))
+  return(c(WRS=bp1,CBC=bp2))
+}
+
+bp.func <- function(out){
+  bp1 <- round(mean(out$sims.list$dmape.rep.wrs > out$sims.list$dmape.obs.wrs),2)
+  bp2 <- round(mean(out$sims.list$dmape.rep.cbc > out$sims.list$dmape.obs.cbc),2)
+return(c(WRS=bp1,CBC=bp2))
 }

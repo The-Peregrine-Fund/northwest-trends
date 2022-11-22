@@ -3,7 +3,6 @@ title: "Workflow"
 editor: visual
 author: "Brian W. Rolek"
 date: "17 November 2022"
-
 project:
   type: website
   output-dir: ..//docs
@@ -18,7 +17,7 @@ project:
 ```
 # 1. Introduction to Integrated State-Space Models
 
-The materials hereafter provide example for the integrated data model presented within:
+These materials provide examples for integrated data models presented within:
 
 C. J. W. McClure, B. W. Rolek, J. Fleischer. Composite population trends reveal status of wintering raptors in the Northwestern USA. 2023. Biological Conservation (in review).
 
