@@ -6,7 +6,7 @@ Corresponding author for repo: rolek.brian at peregrinefund.org
 
 Materials are permanently archived online at (INSERT ZOTERO LINK after acceptance).
 
-This paper assesses population trends of raptors in the Northwestern Unites States using state-space models that integrate data from disparate monitoring programs and create composite population trends.
+This paper assesses population trends of raptors in the Northwestern United States using state-space models that integrate data from disparate monitoring programs and create composite population trends.
 
 Examples of code for integrated models are also available as a [workflow HTML website here.](https://the-peregrine-fund.github.io/northwest-trends/workflow.html "Workflow for integrated data state-space models")
 
