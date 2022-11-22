@@ -1,12 +1,12 @@
 # Northwest raptor trends using integrated data state-space models
 This repo contains supplementary data, R code, JAGS code, and a website for 
-C. J. W McClure, B. W. Rolek, J. Fleischer. Composite population trends reveal status of wintering raptors in the Northwestern USA. 2023. Biological Conservation (in review). [Paper linked here](https://www.XXXXXXXXXXXXXXXXXXXXXXXX "Paper link")
+C. J. W McClure, B. W. Rolek, J. Fleischer. Composite population trends reveal status of wintering raptors in the Northwestern USA. 2023. Biological Conservation (in review). [Paper linked here.](https://www.XXXXXXXXXXXXXXXXXXXXXXXX "Paper link")
 Corresponding author for repo: rolek.brian at peregrinefund.org
 Materials are archived online at (INSERT ZOTERO LINK after acceptance).
 
 This paper assesses population trends of raptors in the Northwestern Unites States using state-space models that integrate data from disparate monitoring programs and create composite population trends.
 
-Examples of code for integrated models are also available as a HTML website here [HTML website here](https://the-peregrine-fund.github.io/northwest-trends/workflow.html "Workflow for integrated data state-space models")
+Examples of code for integrated models are also available as a [HTML website here](https://the-peregrine-fund.github.io/northwest-trends/workflow.html "Workflow for integrated data state-space models")
 
 # METADATA 
 All data are included in the "data" folder as an .Rdata file. Once loaded into R, a list object named "dall" contains data for 11 raptor species. Here we provide metadata for "dall". Each species has it's own list within "dall". For example, dall[["RTHA"]] will return all Red-tailed Hawk data necessary for the integrated model for JAGS.
