@@ -2,10 +2,10 @@
 title: "Workflow"
 editor: visual
 author: "Brian W. Rolek"
-date: "17 November 2022"
+date: "22 November 2022"
 project:
   type: website
-  output-dir: ..//docs
+  output-dir: .//docs
 ---
 
 ```{=html}
@@ -15,15 +15,17 @@ project:
 }
 </style>
 ```
-# 1. Introduction to Integrated State-Space Models
+# 1. Integrated data state-space models for estimating Northwest raptor trends
 
 These materials provide examples for integrated data models presented within:
 
-C. J. W. McClure, B. W. Rolek, J. Fleischer. Composite population trends reveal status of wintering raptors in the Northwestern USA. 2023. Biological Conservation (in review).
+C. J. W. McClure, B. W. Rolek, J. Fleischer. Composite population trends reveal status of wintering raptors in the Northwestern USA. Biological Conservation (in review).
 
 Materials are archived online at (INSERT ZOTERO LINK after acceptance).
 
-Here we provide three examples of integrated data models that combine Winter Raptor Survey data and Christmas Bird Count data. See .R files for examples of models that only include WRS or CBC data.
+Here we provide three examples of integrated data state-space models that combine Winter Raptor Survey data and Christmas Bird Count data to estimate population trends.
+
+Metadata are archived online at https://github.com/The-Peregrine-Fund/northwest-trends/blob/master/README.md.
 
 # 2. Poisson
 

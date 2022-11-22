@@ -190,4 +190,4 @@ bp.tab[j:(j+1), "zero.inflated.Poisson"] <- bp.func(out)
 j <- j+2
 }
 
-write.csv()
+write.csv(bp.tab, "./data/goodness-of-fit_table.csv")
