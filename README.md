@@ -6,12 +6,12 @@ Corresponding author for repo: rolek.brian at peregrinefund.org
 
 Materials are permanently archived online at (INSERT ZOTERO LINK after acceptance).
 
-This paper assesses population trends of raptors in the Northwestern United States using state-space models that integrate data from disparate monitoring programs and create composite population trends.
+This paper assesses population trends of raptors in the Northwestern United States using state-space models that integrate data from disparate monitoring programs (Christmas Bird Counts and Winter Raptor Surveys) to create composite population trends.
 
 Examples of code for integrated models are also available as a [workflow HTML website here.](https://the-peregrine-fund.github.io/northwest-trends/workflow.html "Workflow for integrated data state-space models")
 
 # METADATA 
-All data are included in the "data" folder as an .Rdata file. Once loaded into R, a list object named "dall" contains data for 11 raptor species. Here we provide metadata for "dall". Each species has it's own list within "dall". For example, dall[["RTHA"]] will return all Red-tailed Hawk data necessary for the integrated model for JAGS.
+Data are included in the "data" folder as an .Rdata file. Once loaded into R, a list object named "dall" contains data for 11 raptor species. Here we provide metadata for "dall". Each species has it's own list within "dall". For example, dall[["RTHA"]] will return all Red-tailed Hawk data necessary for the integrated model for JAGS.
 
 Each species list has the following fields:
 * count- WRS counts of that species.
