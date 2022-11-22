@@ -5,7 +5,7 @@ C. J. W McClure, B. W. Rolek, J. Fleischer. Composite population trends reveal s
 Materials are archived online at (INSERT ZOTERO LINK after acceptance).
 
 Examples of code for integrated models are also available as a HTML website at:
-https://the-peregrine-fund.github.io/northwest-trends/
+https://the-peregrine-fund.github.io/northwest-trends/workflow.html
 
 Metadata: All data are included in the "data" folder as an .Rdata file. Once loaded into R, a list object named "dall" contains data for 11 raptor species. Here we provide metadata for "dall". Each species has it's own list within "dall". For example, dall[["RTHA"]] will return all Red-tailed Hawk data necessary for the integrated model for JAGS.
 
