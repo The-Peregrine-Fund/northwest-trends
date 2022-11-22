@@ -1,4 +1,4 @@
-# Northwest raptor trends using integrated data state-space models
+# Integrated data state-space models for estimating Northwest raptor trends
 This repo contains supplementary data, R code, JAGS code, and a website for 
 C. J. W McClure, B. W. Rolek, J. Fleischer. Composite population trends reveal status of wintering raptors in the Northwestern USA. 2023. Biological Conservation (in review).  
 
