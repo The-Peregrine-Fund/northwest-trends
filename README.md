@@ -2,11 +2,9 @@
 This repo contains supplementary data, R code, JAGS code, and a website for 
 C. J. W McClure, B. W. Rolek, J. Fleischer. Composite population trends reveal status of wintering raptors in the Northwestern USA. 2023. Biological Conservation.  
 
-Zenodo repo : [![DOI](https://zenodo.org/badge/566442152.svg)](https://zenodo.org/badge/latestdoi/566442152)
-
 Corresponding author for repo: rolek.brian at peregrinefund.org  
 
-Materials are permanently archived online at (INSERT ZOTERO LINK after acceptance).
+Materials are permanently archived online at [![DOI](https://zenodo.org/badge/566442152.svg)](https://zenodo.org/badge/latestdoi/566442152)
 
 We assessed population trends of raptors in the Northwestern United States using state-space models that integrate data from disparate monitoring programs (Christmas Bird Counts and Winter Raptor Surveys) to create composite population trends.
 
