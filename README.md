@@ -1,12 +1,12 @@
 # Integrated data state-space models for estimating Northwest raptor trends
 This repo contains supplementary data, R code, JAGS code, and a website for 
-C. J. W McClure, B. W. Rolek, J. Fleischer. Composite population trends reveal status of wintering raptors in the Northwestern USA. 2023. Biological Conservation (in review).  
+C. J. W McClure, B. W. Rolek, J. Fleischer. Composite population trends reveal status of wintering raptors in the Northwestern USA. 2023. Biological Conservation.  
 
 Corresponding author for repo: rolek.brian at peregrinefund.org  
 
 Materials are permanently archived online at (INSERT ZOTERO LINK after acceptance).
 
-This paper assesses population trends of raptors in the Northwestern United States using state-space models that integrate data from disparate monitoring programs (Christmas Bird Counts and Winter Raptor Surveys) to create composite population trends.
+We assessed population trends of raptors in the Northwestern United States using state-space models that integrate data from disparate monitoring programs (Christmas Bird Counts and Winter Raptor Surveys) to create composite population trends.
 
 Examples of code for integrated models are also available as a [workflow HTML website here.](https://the-peregrine-fund.github.io/northwest-trends/workflow.html "Workflow for integrated data state-space models")
 
